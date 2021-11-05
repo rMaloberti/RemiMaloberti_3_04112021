@@ -4,7 +4,7 @@
   "description": "openclassrooms 3rd project : OhMyFood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style nested"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed"
   },
   "repository": {
     "type": "git",
