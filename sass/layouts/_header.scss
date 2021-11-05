@@ -9,7 +9,7 @@
 
     /* Margin & padding */
     padding: 1rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.25rem;
 
     /* Shadow */
     box-shadow: 0 0.1rem 0.25rem $shadow-color;
@@ -28,5 +28,6 @@
 
         position: fixed;
         left: 1rem;
+        top: 1.25rem;
     }
 }
