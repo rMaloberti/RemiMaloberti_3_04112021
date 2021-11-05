@@ -1,1 +1,1 @@
-*,*::after,*::before{margin:0;padding:0;box-sizing:inherit}body{box-sizing:border-box}/*# sourceMappingURL=style.css.map */
+*,*::after,*::before{margin:0;padding:0;box-sizing:inherit}body{box-sizing:border-box}header{width:100%;display:flex;justify-content:center;padding:.5rem;padding-top:1rem;box-shadow:0 .1rem .25rem #999}header svg{width:10rem}/*# sourceMappingURL=style.css.map */
