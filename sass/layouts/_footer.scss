@@ -1,0 +1,72 @@
+/* Footer */
+.footer {
+    /* Size */
+    width: 100%;
+
+    /* Background */
+    background: #2e2e2e;
+
+    /* Margin and padding */
+    padding: 0.75rem 1.25rem 1.75rem 1.25rem;
+
+    @include breakpoint(200px) {
+        /* Margin and padding */
+        padding: 0 0.5rem 1rem 0.5rem;
+    }
+
+    &__logo {
+        /* Size */
+        width: 5rem;
+
+        path {
+            /* Color */
+            fill: white;
+        }
+
+        @include breakpoint(200px) {
+            /* Size */
+            width: 2rem;
+        }
+    }
+
+    > ul > li {
+        /* Margin and padding */
+        margin: 0.2rem 0;
+
+        @include breakpoint(200px) {
+            /* Margin and padding */
+            margin: 0;
+        }
+    }
+
+    > ul a {
+        /* Size */
+        font-size: 0.75rem;
+
+        /* Color */
+        color: white;
+
+        @include breakpoint(200px) {
+            /* Size */
+            font-size: 0.35rem;
+        }
+
+        > svg {
+            /* Size */
+            min-width: 15px;
+            font-size: 0.7rem;
+
+            /* Margin and padding */
+            margin-right: 0.15rem;
+
+            @include breakpoint(200px) {
+                /* Size */
+                min-width: 0.5rem;
+                font-size: 0.3rem;
+
+                /* Margin: and padding */
+                margin: 0;
+            }
+        }
+    }
+}
