@@ -1,20 +1,32 @@
-header {
+.header {
     /* Size */
     width: 100%;
 
     /* Display */
     display: flex;
+    align-items: center;
     justify-content: center;
 
     /* Margin & padding */
-    padding: 0.5rem;
-    padding-top: 1rem;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
 
     /* Shadow */
     box-shadow: 0 0.1rem 0.25rem $shadow-color;
 
-    svg {
+    &__logo {
         /* Size */
-        width: 10rem;
+        width: 9rem;
+    }
+
+    &__back {
+        /* Size */
+        font-size: 1rem;
+
+        /* Color */
+        color: black;
+
+        position: fixed;
+        left: 1rem;
     }
 }
