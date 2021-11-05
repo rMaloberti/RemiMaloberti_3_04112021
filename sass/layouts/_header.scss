@@ -8,8 +8,7 @@
     justify-content: center;
 
     /* Margin & padding */
-    padding: 1rem;
-    padding-bottom: 0.25rem;
+    padding: 1rem 2.25rem 0.25rem 2.25rem;
 
     /* Shadow */
     box-shadow: 0 0.1rem 0.25rem $shadow-color;
@@ -17,6 +16,7 @@
     &__logo {
         /* Size */
         width: 9rem;
+        min-width: 4rem;
     }
 
     &__back {
@@ -26,8 +26,18 @@
         /* Color */
         color: black;
 
+        /* Position */
         position: fixed;
         left: 1rem;
         top: 1.25rem;
+
+        @media only screen and (max-width: 200px) {
+            /* Size */
+            font-size: 0.75rem;
+
+            /* Position */
+            left: unset;
+            top: 0.25rem;
+        }
     }
 }
