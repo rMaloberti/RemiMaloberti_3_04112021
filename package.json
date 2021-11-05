@@ -1,0 +1,19 @@
+{
+  "name": "p3-ohmyfood",
+  "version": "1.0.0",
+  "description": "openclassrooms 3rd project : OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style nested"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rMaloberti/RemiMaloberti_3_04112021.git"
+  },
+  "author": "rMaloberti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rMaloberti/RemiMaloberti_3_04112021/issues"
+  },
+  "homepage": "https://github.com/rMaloberti/RemiMaloberti_3_04112021#readme"
+}
