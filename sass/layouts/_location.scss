@@ -1,0 +1,46 @@
+/* Location section */
+.location {
+    /* Background */
+    background: $bg-color1;
+
+    &__banner {
+        /* Display */
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        /* Margin and padding */
+        padding: 0.75rem 0;
+
+        /* Background */
+        background: $bg-color2;
+
+        @include breakpointMax(200px) {
+            /* Display */
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+
+            /* Margin and padding */
+            padding: 0.25rem 0;
+        }
+
+        > p,
+        > svg {
+            /* Size */
+            font-size: 0.85rem;
+
+            /* Position */
+            position: relative;
+            right: 1rem;
+
+            @include breakpointMax(200px) {
+                /* Size */
+                font-size: 0.4rem;
+
+                /* Position */
+                right: 0;
+            }
+        }
+    }
+}
