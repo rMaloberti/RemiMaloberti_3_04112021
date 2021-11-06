@@ -7,7 +7,7 @@
     background: $footer-bg;
 
     /* Margin and padding */
-    padding: 0.75rem 1.25rem 1.75rem 1.25rem;
+    padding: 1rem 1.25rem 1.75rem 1.25rem;
 
     @include breakpointMax(200px) {
         /* Margin and padding */
@@ -56,7 +56,7 @@
             }
             > a {
                 /* Size */
-                font-size: 0.75rem;
+                font-size: 0.9rem;
 
                 /* Color */
                 color: white;
@@ -69,7 +69,7 @@
                 > svg {
                     /* Size */
                     min-width: 15px;
-                    font-size: 0.7rem;
+                    font-size: 0.8rem;
 
                     /* Margin and padding */
                     margin-right: 0.15rem;
