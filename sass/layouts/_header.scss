@@ -11,9 +11,6 @@
     /* Margin & padding */
     padding: 1rem 2.25rem 0.25rem 2.25rem;
 
-    /* Shadow */
-    box-shadow: 0 0.1rem 0.25rem $shadow-color;
-
     @include breakpointMax(200px) {
         padding: 0.5rem 0.15rem 0.15rem 0.15rem;
     }
