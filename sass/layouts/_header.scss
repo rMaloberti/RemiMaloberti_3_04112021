@@ -1,3 +1,4 @@
+/* Header */
 .header {
     /* Size */
     width: 100%;
@@ -13,10 +14,14 @@
     /* Shadow */
     box-shadow: 0 0.1rem 0.25rem $shadow-color;
 
+    @include breakpointMax(200px) {
+        padding: 0.5rem 0.15rem 0.15rem 0.15rem;
+    }
+
     &__logo {
         /* Size */
         width: 9rem;
-        min-width: 4rem;
+        min-width: 2rem;
     }
 
     &__back {
@@ -28,9 +33,9 @@
         left: 1rem;
         top: 1.25rem;
 
-        @media only screen and (max-width: 200px) {
+        @include breakpointMax(200px) {
             /* Size */
-            font-size: 0.75rem;
+            font-size: 0.5rem;
 
             /* Position */
             left: unset;

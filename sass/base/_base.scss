@@ -1,11 +1,21 @@
+/* All */
 *,
 *::after,
 *::before {
+    /* Margin and padding */
     margin: 0;
     padding: 0;
+
+    /* Box sizing */
     box-sizing: inherit;
 }
 
 body {
+    /* Box-sizing */
     box-sizing: border-box;
+}
+
+ul {
+    /* List style */
+    list-style: none;
 }
