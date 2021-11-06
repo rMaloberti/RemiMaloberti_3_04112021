@@ -77,6 +77,11 @@
                 /* Size */
                 font-size: 0.7rem;
             }
+
+            @include breakpointMin(767px) {
+                /* Size */
+                max-width: 25rem;
+            }
         }
 
         > p {
@@ -90,6 +95,11 @@
             @include breakpointMax(200px) {
                 /* Size */
                 font-size: 0.5rem;
+            }
+
+            @include breakpointMin(1224px) {
+                /* Size */
+                max-width: 30rem;
             }
         }
     }
