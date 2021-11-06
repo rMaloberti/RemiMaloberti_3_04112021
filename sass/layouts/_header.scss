@@ -14,7 +14,7 @@
     /* Shadow */
     box-shadow: 0 0.1rem 0.25rem $shadow-color;
 
-    @include breakpoint(200px) {
+    @include breakpointMax(200px) {
         padding: 0.5rem 0.15rem 0.15rem 0.15rem;
     }
 
@@ -33,7 +33,7 @@
         left: 1rem;
         top: 1.25rem;
 
-        @include breakpoint(200px) {
+        @include breakpointMax(200px) {
             /* Size */
             font-size: 0.5rem;
 
