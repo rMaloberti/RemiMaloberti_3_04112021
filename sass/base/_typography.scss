@@ -14,9 +14,15 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url("../../public/assets/fonts/Roboto/Roboto-Regular.ttf")
+    src: url("../../public/assets/fonts/Roboto/Roboto-Normal.ttf")
         format("truetype");
     font-weight: normal;
+}
+
+@font-face {
+    font-family: "Roboto-light";
+    src: url("../../public/assets/fonts/Roboto/Roboto-Light.ttf")
+        format("truetype");
 }
 
 h1 {
@@ -28,6 +34,17 @@ h3,
 p,
 a {
     font-family: "Roboto", sans-serif;
+}
+
+/* Headings */
+h2,
+h3 {
+    font-weight: bold;
+}
+
+/* Paragraphs */
+p {
+    font-weight: normal;
 }
 
 /* Anchors */
