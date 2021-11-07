@@ -1,0 +1,164 @@
+/* Quick start */
+.quick-start {
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    /* Margin and padding */
+    padding: 2.5rem 1.25rem;
+
+    @include breakpointMax(200px) {
+        /* Display */
+        gap: 0.75rem;
+
+        /* Margin and padding */
+        padding: 1.25rem 0;
+    }
+
+    > h2 {
+        /* Size */
+        font-size: 1.4rem;
+
+        /* Display */
+        align-self: flex-start;
+
+        @include breakpointMax(200px) {
+            /* Size */
+            font-size: 0.7rem;
+
+            /* Display */
+            align-self: center;
+        }
+
+        @include breakpointMax(100px) {
+            /* Size */
+            font-size: 0.4rem;
+        }
+    }
+
+    .card {
+        /* Size */
+        max-width: 20rem;
+
+        /* Display */
+        gap: 0.25rem;
+
+        /* Background */
+        background: $bg-color1;
+
+        /* Margin and padding */
+        margin-left: 1.25rem;
+        padding: 1.5rem 0;
+        padding-right: 1rem;
+
+        /* Border */
+        border-radius: 1.25rem;
+
+        @include breakpointMax(200px) {
+            /* Size */
+            width: 90%;
+
+            /* Display */
+            flex-direction: column;
+            align-items: center;
+
+            /* Margin and padding */
+            margin-left: 0;
+            padding-left: 0;
+            padding: 0.75rem 0.25rem;
+
+            /* Border */
+            border-radius: 0.635rem;
+        }
+
+        &__nb {
+            /* Size */
+            min-width: 1.5rem;
+            height: 1.5rem;
+
+            /* Display */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* Background */
+            background: $primary-color;
+
+            /* Broder */
+            border-radius: 50%;
+
+            /* Position */
+            position: relative;
+            right: 0.75rem;
+
+            /* Font */
+            font-family: "Roboto", sans-serif;
+            font-size: 0.75rem;
+            color: white;
+
+            @include breakpointMax(200px) {
+                /* Display */
+                display: none;
+            }
+        }
+
+        > svg {
+            /* Size */
+            min-width: 1.5rem;
+            font-size: 1.25rem;
+
+            /* Color */
+            color: #6e6e6e;
+
+            @include breakpointMax(200px) {
+                /* Size */
+                min-width: 0.75rem;
+                font-size: 0.625rem;
+            }
+
+            @include breakpointMax(100px) {
+                /* Size */
+                max-width: 0.5rem;
+                font-size: 0.35rem;
+            }
+        }
+
+        > p {
+            /* Size */
+            font-size: 1rem;
+
+            /* Margin and padding */
+            margin-left: 1rem;
+
+            /* Font */
+            font-weight: bold;
+
+            @include breakpointMax(200px) {
+                /* Size */
+                font-size: 0.5rem;
+
+                /* Margin and padding */
+                margin-left: 0;
+
+                /* Text align */
+                text-align: center;
+            }
+
+            @include breakpointMax(100px) {
+                /* Size */
+                font-size: 0.25rem;
+            }
+        }
+
+        &--highlight {
+            /* Background */
+            background: lighten($primary-color, 35%);
+
+            > svg {
+                color: $primary-color;
+            }
+        }
+    }
+}
