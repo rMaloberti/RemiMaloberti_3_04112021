@@ -1,106 +1,44 @@
 /* Location section */
 .location {
+    /* Display */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    /* Margin and padding */
+    padding: 1rem 0;
+
     /* Background */
-    background: $bg-color1;
+    background: $bg-color2;
 
-    &__banner {
+    /* Shadow */
+    box-shadow: inset 0 0.1rem 0.2rem $shadow-color;
+
+    @include breakpointMax(200px) {
         /* Display */
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-
-        /* Margin and padding */
-        padding: 1rem 0;
-
-        /* Background */
-        background: $bg-color2;
-
-        /* Shadow */
-        box-shadow: inset 0 0.1rem 0.2rem $shadow-color;
-
-        @include breakpointMax(200px) {
-            /* Display */
-            flex-direction: column;
-            align-items: center;
-            gap: 0;
-
-            /* Margin and padding */
-            padding: 0.5rem 0;
-        }
-
-        > p,
-        > svg {
-            /* Size */
-            font-size: 0.85rem;
-
-            /* Position */
-            position: relative;
-            right: 0.75rem;
-
-            @include breakpointMax(200px) {
-                /* Size */
-                font-size: 0.4rem;
-
-                /* Position */
-                right: 0;
-            }
-        }
-    }
-
-    > .intro {
-        /* Display */
-        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
-
-        /* Text align */
-        text-align: center;
+        gap: 0;
 
         /* Margin and padding */
-        padding: 2.5rem 0;
+        padding: 0.5rem 0;
+    }
+
+    > p,
+    > svg {
+        /* Size */
+        font-size: 0.85rem;
+
+        /* Position */
+        position: relative;
+        right: 0.75rem;
 
         @include breakpointMax(200px) {
-            /* Display */
-            gap: 0.5rem;
-
-            /* Margin and padding */
-            padding: 1.25rem;
-        }
-
-        > h2 {
             /* Size */
-            font-size: 1.4rem;
-            max-width: 15rem;
+            font-size: 0.4rem;
 
-            @include breakpointMax(200px) {
-                /* Size */
-                font-size: 0.7rem;
-            }
-
-            @include breakpointMin(767px) {
-                /* Size */
-                max-width: 25rem;
-            }
-        }
-
-        > p {
-            /* Size */
-            font-size: 1rem;
-            max-width: 20rem;
-
-            /* Font */
-            font-family: "Roboto-light", sans-serif;
-
-            @include breakpointMax(200px) {
-                /* Size */
-                font-size: 0.5rem;
-            }
-
-            @include breakpointMin(1224px) {
-                /* Size */
-                max-width: 30rem;
-            }
+            /* Position */
+            right: 0;
         }
     }
 }

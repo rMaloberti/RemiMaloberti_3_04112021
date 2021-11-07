@@ -1,0 +1,59 @@
+.intro {
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    /* Text align */
+    text-align: center;
+
+    /* Margin and padding */
+    padding: 2.5rem 0;
+
+    /* Background */
+    background: $bg-color1;
+
+    @include breakpointMax(200px) {
+        /* Display */
+        gap: 0.5rem;
+
+        /* Margin and padding */
+        padding: 1.25rem;
+    }
+
+    > h2 {
+        /* Size */
+        font-size: 1.4rem;
+        max-width: 15rem;
+
+        @include breakpointMax(200px) {
+            /* Size */
+            font-size: 0.7rem;
+        }
+
+        @include breakpointMin(767px) {
+            /* Size */
+            max-width: 25rem;
+        }
+    }
+
+    > p {
+        /* Size */
+        font-size: 1rem;
+        max-width: 20rem;
+
+        /* Font */
+        font-family: "Roboto-light", sans-serif;
+
+        @include breakpointMax(200px) {
+            /* Size */
+            font-size: 0.5rem;
+        }
+
+        @include breakpointMin(1224px) {
+            /* Size */
+            max-width: 30rem;
+        }
+    }
+}
