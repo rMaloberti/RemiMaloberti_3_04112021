@@ -11,12 +11,16 @@
 
     @include breakpointMax(200px) {
         /* Margin and padding */
-        padding: 0 0.5rem 1rem 0.5rem;
+        padding: 0.5rem 0.5rem 1rem 0.5rem;
     }
 
     &__logo {
         /* Size */
         width: 5rem;
+        height: auto;
+
+        /* Margin and padding */
+        margin: 0.5rem 0;
 
         path {
             /* Color */
@@ -26,23 +30,31 @@
         @include breakpointMax(200px) {
             /* Size */
             width: 2rem;
+
+            /* Margin and padding */
+            margin: 0;
         }
     }
     > ul {
         /* Display */
         display: flex;
         flex-flow: column nowrap;
+
         @include breakpointMin(767px) {
             /* Display */
             flex-flow: row wrap;
         }
         > li {
+            /* Display */
+            display: flex;
+            align-items: center;
+
             /* Margin and padding */
-            margin: 0.2rem 0;
+            margin: 0.25rem 0;
 
             @include breakpointMax(200px) {
                 /* Margin and padding */
-                margin: 0;
+                margin: 0.1rem 0;
             }
 
             @include breakpointMin(767px) {
