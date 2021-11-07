@@ -18,7 +18,11 @@
     &__logo {
         /* Size */
         width: 9rem;
-        min-width: 2rem;
+
+        @include breakpointMax(200px) {
+            /* Size */
+            width: 4.5rem;
+        }
     }
 
     &__back {
