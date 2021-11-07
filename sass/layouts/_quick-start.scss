@@ -17,6 +17,13 @@
         padding: 1.25rem 0;
     }
 
+    @include breakpointMin(1224px) {
+        /* Display */
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     > h2 {
         /* Size */
         font-size: 1.4rem;
@@ -35,6 +42,19 @@
         @include breakpointMax(100px) {
             /* Size */
             font-size: 0.4rem;
+        }
+
+        @include breakpointMin(767px) {
+            /* Display */
+            align-self: center;
+        }
+
+        @include breakpointMin(1224px) {
+            /* Size */
+            width: 100%;
+
+            /* Text align */
+            text-align: center;
         }
     }
 
