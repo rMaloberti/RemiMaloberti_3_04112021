@@ -1,4 +1,4 @@
-.intro {
+#intro {
     /* Display */
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
     /* Background */
     background: $bg-color1;
 
-    @include breakpointMax(200px) {
+    @include breakpointMax(350px) {
         /* Display */
         gap: 0.5rem;
 
@@ -27,7 +27,7 @@
         font-size: 1.4rem;
         max-width: 15rem;
 
-        @include breakpointMax(200px) {
+        @include breakpointMax(350px) {
             /* Size */
             font-size: 0.7rem;
         }
@@ -46,7 +46,7 @@
         /* Font */
         font-family: "Roboto-light", sans-serif;
 
-        @include breakpointMax(200px) {
+        @include breakpointMax(350px) {
             /* Size */
             font-size: 0.5rem;
         }

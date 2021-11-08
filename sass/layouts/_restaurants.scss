@@ -1,0 +1,66 @@
+/* Restaurants */
+#restaurants {
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    /* Margin and padding */
+    padding: 3rem 1.25rem 4rem 1.25rem;
+
+    /* Background */
+    background: $bg-color1;
+
+    @include breakpointMax(350px) {
+        /* Display */
+        gap: 0.625rem;
+
+        /* Margin and padding */
+        padding: 1.5rem 0.625rem 2rem 0.625rem;
+    }
+
+    @include breakpointMax(100px) {
+        /* Display */
+        gap: 0.3rem;
+
+        /* Margin and padding */
+        padding: 0.75rem 0.3rem 1rem 0.3rem;
+    }
+
+    h2 {
+        /* Size */
+        font-size: 1.4rem;
+
+        @include breakpointMax(350px) {
+            /* Size */
+            font-size: 0.7rem;
+        }
+
+        @include breakpointMax(100px) {
+            /* Size */
+            font-size: 0.35rem;
+        }
+    }
+
+    .card {
+        /* Size */
+        max-width: 20rem;
+        max-height: 15rem;
+
+        /* Display */
+        flex-direction: column;
+
+        /* Margin and padding */
+        margin: 0 auto;
+
+        @include breakpointMax(350px) {
+            /* Size */
+            max-height: 7.5rem;
+        }
+
+        @include breakpointMax(100px) {
+            /* Size */
+            max-height: 3.75rem;
+        }
+    }
+}
