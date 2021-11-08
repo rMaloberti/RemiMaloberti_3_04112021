@@ -7,9 +7,9 @@
     background: $footer-bg;
 
     /* Margin and padding */
-    padding: 1rem 1.25rem 1.75rem 1.25rem;
+    padding: 1rem 1.25rem;
 
-    @include breakpointMax(200px) {
+    @include breakpointMax(350px) {
         /* Margin and padding */
         padding: 0.5rem 0.5rem 1rem 0.5rem;
     }
@@ -27,7 +27,7 @@
             fill: white;
         }
 
-        @include breakpointMax(200px) {
+        @include breakpointMax(350px) {
             /* Size */
             width: 2rem;
 
@@ -39,6 +39,9 @@
         /* Display */
         display: flex;
         flex-flow: column nowrap;
+
+        /* Margin and padding */
+        margin: 0.5rem 0;
 
         @include breakpointMin(767px) {
             /* Display */
@@ -52,7 +55,7 @@
             /* Margin and padding */
             margin: 0.25rem 0;
 
-            @include breakpointMax(200px) {
+            @include breakpointMax(350px) {
                 /* Margin and padding */
                 margin: 0.1rem 0;
             }
@@ -73,7 +76,7 @@
                 /* Color */
                 color: white;
 
-                @include breakpointMax(200px) {
+                @include breakpointMax(350px) {
                     /* Size */
                     font-size: 0.35rem;
                 }
@@ -86,7 +89,7 @@
                     /* Margin and padding */
                     margin-right: 0.15rem;
 
-                    @include breakpointMax(200px) {
+                    @include breakpointMax(350px) {
                         /* Size */
                         min-width: 0.5rem;
                         font-size: 0.3rem;

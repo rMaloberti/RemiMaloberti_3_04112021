@@ -14,7 +14,7 @@
     /* Shadow */
     box-shadow: inset 0 0.1rem 0.2rem $shadow-color;
 
-    @include breakpointMax(200px) {
+    @include breakpointMax(350px) {
         /* Display */
         flex-direction: column;
         align-items: center;
@@ -33,7 +33,7 @@
         position: relative;
         right: 0.75rem;
 
-        @include breakpointMax(200px) {
+        @include breakpointMax(350px) {
             /* Size */
             font-size: 0.4rem;
 

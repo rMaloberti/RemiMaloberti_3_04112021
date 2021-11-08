@@ -11,7 +11,7 @@
     /* Margin & padding */
     padding: 1rem 2.25rem 0.25rem 2.25rem;
 
-    @include breakpointMax(200px) {
+    @include breakpointMax(350px) {
         padding: 0.5rem 0.15rem 0.15rem 0.15rem;
     }
 
@@ -19,7 +19,7 @@
         /* Size */
         width: 9rem;
 
-        @include breakpointMax(200px) {
+        @include breakpointMax(350px) {
             /* Size */
             width: 4.5rem;
         }
@@ -34,7 +34,7 @@
         left: 1rem;
         top: 1.25rem;
 
-        @include breakpointMax(200px) {
+        @include breakpointMax(350px) {
             /* Size */
             font-size: 0.5rem;
 
