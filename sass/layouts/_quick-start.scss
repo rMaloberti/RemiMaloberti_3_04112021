@@ -1,5 +1,5 @@
 /* Quick start */
-.quick-start {
+#quick-start {
     /* Display */
     display: flex;
     flex-direction: column;
@@ -128,9 +128,6 @@
             /* Size */
             min-width: 1.5rem;
             font-size: 1.25rem;
-
-            /* Color */
-            color: #6e6e6e;
 
             @include breakpointMax(200px) {
                 /* Size */
