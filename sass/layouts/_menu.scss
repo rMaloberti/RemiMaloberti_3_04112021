@@ -1,6 +1,68 @@
 /* Menu */
-.menu .thumbnail {
-    background-size: cover;
-    background-position: center;
-    min-height: 25vh;
+.menu {
+    .thumbnail {
+        /* Size */
+        min-height: 20rem;
+
+        /* Background */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .details {
+        /* Display */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        /* Background */
+        background: $bg-color1;
+
+        /* Border */
+        border-radius: 2.5rem 2.5rem 0 0;
+
+        /* Margin and padding */
+        padding: 2rem 1rem;
+        margin-bottom: -5rem;
+
+        /* Position */
+        position: relative;
+        bottom: 5rem;
+
+        .headings {
+            /* Size */
+            width: 100%;
+
+            /* Display */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h1 {
+                /* Size */
+                font-size: 1.75rem;
+            }
+
+            .fav {
+                /* Margin and padding */
+                margin-right: 1rem;
+
+                svg {
+                    /* Size */
+                    font-size: 1.7rem;
+
+                    /* Color */
+                    color: #6e6e6e;
+                }
+            }
+        }
+
+        .btn {
+            /* Size */
+            width: 50%;
+
+            /* Text align */
+            text-align: center;
+        }
+    }
 }
