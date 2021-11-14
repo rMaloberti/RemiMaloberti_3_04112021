@@ -22,7 +22,7 @@
         border-radius: 2.5rem 2.5rem 0 0;
 
         /* Margin and padding */
-        padding: 2rem 1rem;
+        padding: 2rem 1rem 2.5rem 1rem;
         margin-bottom: -5rem;
 
         /* Position */
@@ -62,7 +62,7 @@
             width: 100%;
 
             /* Margin and padding */
-            padding: 2rem 0;
+            padding-top: 2rem;
 
             h2 {
                 /* Size */
@@ -88,6 +88,11 @@
             }
 
             ul {
+                /* Display */
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
                 /* Margin and padding */
                 margin: 1rem 0 2.5rem 0;
 
@@ -133,6 +138,9 @@
         .btn {
             /* Size */
             width: 50%;
+
+            /* Font */
+            font-size: 1rem;
 
             /* Text align */
             text-align: center;
