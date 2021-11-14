@@ -57,6 +57,37 @@
             }
         }
 
+        .meals {
+            /* Size */
+            width: 100%;
+
+            /* Margin and padding */
+            padding: 2rem 0;
+
+            h2 {
+                /* Size */
+                font-size: 1rem;
+
+                /* Font */
+                font-family: "Roboto-light", sans-serif;
+            }
+
+            hr {
+                /* Size */
+                width: 2.5rem;
+                height: 0.2rem;
+
+                /* Margin and padding */
+                margin: 0.25rem 0;
+
+                /* Color */
+                background-color: $tertiary-color;
+
+                /* Border */
+                border: none;
+            }
+        }
+
         .btn {
             /* Size */
             width: 50%;
