@@ -86,6 +86,48 @@
                 /* Border */
                 border: none;
             }
+
+            ul {
+                /* Margin and padding */
+                margin: 1rem 0 2.5rem 0;
+
+                .card {
+                    /* Display */
+                    justify-content: space-between;
+                    align-items: flex-end;
+
+                    /* Background */
+                    background: white;
+
+                    /* Border */
+                    border-radius: 1rem;
+
+                    /* Margin and padding */
+                    padding: 0.75rem 0.65rem;
+                    padding-right: 1.5rem;
+
+                    h3 {
+                        /* Size */
+                        font-size: 1.15rem;
+
+                        /* Margin and padding */
+                        margin-bottom: 0.5rem;
+                    }
+
+                    p {
+                        /* Size */
+                        font-size: 1rem;
+
+                        /* Font */
+                        font-family: "Roboto-light", sans-serif;
+                    }
+
+                    .price {
+                        /* Font */
+                        font-weight: bold;
+                    }
+                }
+            }
         }
 
         .btn {
