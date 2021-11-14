@@ -57,6 +57,79 @@
             }
         }
 
+        .meals {
+            /* Size */
+            width: 100%;
+
+            /* Margin and padding */
+            padding: 2rem 0;
+
+            h2 {
+                /* Size */
+                font-size: 1rem;
+
+                /* Font */
+                font-family: "Roboto-light", sans-serif;
+            }
+
+            hr {
+                /* Size */
+                width: 2.5rem;
+                height: 0.2rem;
+
+                /* Margin and padding */
+                margin: 0.25rem 0;
+
+                /* Color */
+                background-color: $tertiary-color;
+
+                /* Border */
+                border: none;
+            }
+
+            ul {
+                /* Margin and padding */
+                margin: 1rem 0 2.5rem 0;
+
+                .card {
+                    /* Display */
+                    justify-content: space-between;
+                    align-items: flex-end;
+
+                    /* Background */
+                    background: white;
+
+                    /* Border */
+                    border-radius: 1rem;
+
+                    /* Margin and padding */
+                    padding: 0.75rem 0.65rem;
+                    padding-right: 1.5rem;
+
+                    h3 {
+                        /* Size */
+                        font-size: 1.15rem;
+
+                        /* Margin and padding */
+                        margin-bottom: 0.5rem;
+                    }
+
+                    p {
+                        /* Size */
+                        font-size: 1rem;
+
+                        /* Font */
+                        font-family: "Roboto-light", sans-serif;
+                    }
+
+                    .price {
+                        /* Font */
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
         .btn {
             /* Size */
             width: 50%;
