@@ -2,6 +2,9 @@
     /* Background */
     background: linear-gradient($secondary-color, $primary-color);
 
+    /* Position */
+    position: relative;
+
     /* Border */
     border-radius: 50px;
 
@@ -15,6 +18,47 @@
     /* Font */
     font-size: 0.9rem;
     color: white;
+
+    /* Opacity */
+    opacity: 1;
+
+    /* Transition */
+    transition: opacity 200ms 100ms ease-out;
+
+    &::after {
+        /* Content */
+        content: "";
+
+        /* Size */
+        width: 100%;
+        height: 100%;
+
+        /* Border */
+        border-radius: 50px;
+
+        /* Position */
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        /* Shadow */
+        box-shadow: 0 0.25rem 0.75rem darken($shadow-color, 20%);
+
+        /* Opacity */
+        opacity: 0;
+
+        /* Transition */
+        transition: opacity 300ms ease-out;
+    }
+
+    &:hover {
+        /* Opacity */
+        opacity: 0.9;
+
+        &::after {
+            opacity: 1;
+        }
+    }
 
     @include breakpointMax(350px) {
         /* Margin and padding */
