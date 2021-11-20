@@ -12,6 +12,7 @@
 
         <!-- Font-Awesome library -->
         <script
+            data-search-pseudo-elements
             defer
             src="../public/assets/lib/fontawesome/js/all.min.js"
         ></script>
@@ -32,6 +33,20 @@
         />
     </head>
     <body>
+        <!-- SVG gradient setting -->
+        <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            class="svg-settings"
+        >
+            <defs>
+                <linearGradient id="linear" x1="50%" y1="0%" x2="50%" y2="100%">
+                    <stop class="linear-stop1" offset="0%"></stop>
+                    <stop class="linear-stop2" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+        </svg>
+
         <header class="header">
             <a href="../index.html#restaurants" class="header__back">
                 <i class="fas fa-arrow-left"></i>

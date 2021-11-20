@@ -1,3 +1,20 @@
+/* SVG gradient setting */
+.svg-settings {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.linear-stop1 {
+    stop-color: $primary-color;
+}
+
+.linear-stop2 {
+    stop-color: $secondary-color;
+}
+
 .fav {
     /* Display */
     display: flex;
@@ -5,6 +22,9 @@
 
     /* Margin and padding */
     padding: 0 0.75rem;
+
+    /* Overflow */
+    overflow: hidden;
 
     @include breakpointMax(350px) {
         /* Margin and padding */
@@ -14,6 +34,52 @@
     @include breakpointMax(100px) {
         /* Margin and padding */
         padding: 0 0.15rem;
+    }
+
+    &:hover {
+        > svg:first-child {
+            /* Transform */
+            transform: scale(1);
+        }
+
+        > svg:last-child {
+            /* Opacity */
+            opacity: 0;
+        }
+    }
+
+    &::before {
+        /* Display */
+        display: none;
+
+        /* Font */
+        content: "\f004";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+
+    svg:first-child {
+        /* Position */
+        position: absolute;
+
+        /* Transform */
+        transform-origin: bottom;
+        transform: scale(0);
+
+        /* Transition */
+        transition: transform 500ms;
+
+        path {
+            fill: url(#linear);
+        }
+    }
+
+    svg:last-child {
+        /* Opacity */
+        opacity: 1;
+
+        /* Transition */
+        transition: opacity 500ms;
     }
 
     svg {
@@ -27,7 +93,7 @@
 
         @include breakpointMax(100px) {
             /* Size */
-            font-size: 0.45rem;
+            font-size: 0.3rem;
         }
     }
 }
