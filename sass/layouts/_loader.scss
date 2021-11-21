@@ -1,0 +1,38 @@
+.loader {
+    /* Size */
+    width: 100%;
+
+    /* Display */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+    /* Background */
+    background: white;
+
+    &__spinner {
+        /* Size */
+        font-size: 5rem;
+
+        /* Animation */
+        animation: loader $loader-duration $loader-delay $loader-iterations
+            linear;
+
+        @include breakpointMax(350px) {
+            /* Size */
+            font-size: 30vw;
+        }
+
+        path {
+            /* Color */
+            fill: url(#radial);
+        }
+    }
+
+    &__logo {
+        /* Position */
+        position: absolute;
+        top: 20%;
+    }
+}

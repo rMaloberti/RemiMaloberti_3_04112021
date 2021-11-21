@@ -1,0 +1,13 @@
+.page {
+    /* Width */
+    width: 100%;
+
+    /* Position */
+    position: absolute;
+    top: 0;
+
+    /* Background */
+    background: white;
+
+    animation: page $page-duration ease-out $page-delay both;
+}
