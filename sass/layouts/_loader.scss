@@ -34,5 +34,10 @@
         /* Position */
         position: absolute;
         top: 20%;
+
+        @include breakpointMax(350px) {
+            /* Size */
+            width: 75vw;
+        }
     }
 }
