@@ -13,6 +13,13 @@
 body {
     /* Box-sizing */
     box-sizing: border-box;
+
+    /* Size */
+    width: 100vw;
+    min-height: 100vh;
+
+    /* Display */
+    display: flex;
 }
 
 ul {

@@ -1,20 +1,3 @@
-/* SVG gradient setting */
-.svg-settings {
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-}
-
-.linear-stop1 {
-    stop-color: $primary-color;
-}
-
-.linear-stop2 {
-    stop-color: $secondary-color;
-}
-
 .fav {
     /* Display */
     display: flex;
