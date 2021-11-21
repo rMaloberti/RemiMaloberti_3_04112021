@@ -1,4 +1,5 @@
-.page {
+.page,
+.menu-page {
     /* Width */
     width: 100%;
 
@@ -8,6 +9,9 @@
 
     /* Background */
     background: white;
+}
 
+.page {
+    /* Animation */
     animation: page $page-duration ease-out $page-delay both;
 }
