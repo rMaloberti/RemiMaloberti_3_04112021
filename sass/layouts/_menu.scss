@@ -337,20 +337,31 @@
                         }
                     }
 
+                    a:hover {
+                        .added {
+                            /* Transform */
+                            transform: translateX(-99%);
+
+                            svg {
+                                /* Transform */
+                                transform: rotate(360deg);
+                            }
+                        }
+                    }
+
                     .card {
                         /* Display */
                         justify-content: space-between;
-                        align-items: flex-end;
+                        align-items: stretch;
 
                         /* Background */
                         background: white;
 
+                        /* Overflow */
+                        overflow: hidden;
+
                         /* Border */
                         border-radius: 1rem;
-
-                        /* Margin and padding */
-                        padding: 0.75rem 0.65rem;
-                        padding-right: 1.5rem;
 
                         @include breakpointMax(350px) {
                             /* Border */
@@ -379,87 +390,133 @@
                             padding-right: 0.375rem;
                         }
 
-                        h3 {
+                        .infos {
                             /* Size */
-                            font-size: 1.15rem;
+                            min-width: 100%;
 
                             /* Margin and padding */
-                            margin-bottom: 0.25rem;
+                            padding: 0.75rem 0.65rem;
+                            padding-right: 1.25rem;
 
-                            @include breakpointMax(350px) {
+                            h3 {
                                 /* Size */
-                                font-size: 0.8625rem;
+                                font-size: 1.15rem;
 
                                 /* Margin and padding */
-                                margin-bottom: 0.1875rem;
+                                margin-bottom: 0.25rem;
+
+                                /* Overflow */
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+
+                                @include breakpointMax(350px) {
+                                    /* Size */
+                                    font-size: 0.8625rem;
+
+                                    /* Margin and padding */
+                                    margin-bottom: 0.1875rem;
+                                }
+
+                                @include breakpointMax(250px) {
+                                    /* Size */
+                                    font-size: 0.575rem;
+
+                                    /* Margin and padding */
+                                    margin-bottom: 0.125rem;
+                                }
+
+                                @include breakpointMax(150px) {
+                                    /* Size */
+                                    font-size: 0.2875rem;
+
+                                    /* Margin and padding */
+                                    margin-bottom: 0.0625rem;
+                                }
                             }
 
-                            @include breakpointMax(250px) {
+                            p {
                                 /* Size */
-                                font-size: 0.575rem;
+                                font-size: 1rem;
 
-                                /* Margin and padding */
-                                margin-bottom: 0.125rem;
+                                /* Font */
+                                font-family: "Roboto-light", sans-serif;
+
+                                /* Overflow */
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+
+                                @include breakpointMax(350px) {
+                                    /* Size */
+                                    font-size: 0.75rem;
+                                }
+
+                                @include breakpointMax(250px) {
+                                    /* Size */
+                                    font-size: 0.5rem;
+                                }
+
+                                @include breakpointMax(150px) {
+                                    /* Size */
+                                    font-size: 0.25rem;
+                                }
                             }
 
-                            @include breakpointMax(150px) {
-                                /* Size */
-                                font-size: 0.2875rem;
+                            .price {
+                                /* Display */
+                                align-self: flex-end;
 
-                                /* Margin and padding */
-                                margin-bottom: 0.0625rem;
+                                /* Size */
+                                font-size: 1rem;
+
+                                /* Font */
+                                font-weight: bold;
+
+                                @include breakpointMax(350px) {
+                                    /* Size */
+                                    font-size: 0.75rem;
+                                }
+
+                                @include breakpointMax(250px) {
+                                    /* Size */
+                                    font-size: 0.5rem;
+                                }
+
+                                @include breakpointMax(150px) {
+                                    /* Size */
+                                    font-size: 0.25rem;
+                                }
                             }
                         }
 
-                        p {
+                        .added {
                             /* Size */
-                            max-width: 70vw;
-                            font-size: 1rem;
+                            min-width: 25%;
 
-                            /* Font */
-                            font-family: "Roboto-light", sans-serif;
+                            /* Display */
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
 
-                            /* Overflow */
-                            white-space: nowrap;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
+                            /* Background */
+                            background: $tertiary-color;
 
-                            @include breakpointMax(350px) {
+                            /* Transform */
+                            transform: translateX(0);
+
+                            /* Transition */
+                            transition: transform 400ms ease-in-out;
+
+                            svg {
                                 /* Size */
-                                font-size: 0.75rem;
-                            }
+                                font-size: 1.75rem;
 
-                            @include breakpointMax(250px) {
-                                /* Size */
-                                font-size: 0.5rem;
-                            }
+                                /* Color */
+                                color: white;
 
-                            @include breakpointMax(150px) {
-                                /* Size */
-                                font-size: 0.25rem;
-                            }
-                        }
-
-                        .price {
-                            /* Size */
-                            font-size: 1rem;
-
-                            /* Font */
-                            font-weight: bold;
-
-                            @include breakpointMax(350px) {
-                                /* Size */
-                                font-size: 0.75rem;
-                            }
-
-                            @include breakpointMax(250px) {
-                                /* Size */
-                                font-size: 0.5rem;
-                            }
-
-                            @include breakpointMax(150px) {
-                                /* Size */
-                                font-size: 0.25rem;
+                                /* Transition */
+                                transition: transform 400ms linear;
                             }
                         }
                     }
