@@ -323,10 +323,19 @@
                     max-width: 97.5%;
                 }
 
-                li {
+                .menu-card {
                     /* Size */
                     width: 100%;
                     max-width: 30rem;
+
+                    /* Animation */
+                    animation: menu-page 1s ease-in-out both;
+
+                    @for $i from 1 through 10 {
+                        &--#{$i} {
+                            animation-delay: 150ms * $i;
+                        }
+                    }
 
                     .card {
                         /* Display */
@@ -372,7 +381,6 @@
 
                         h3 {
                             /* Size */
-                            max-width: 97.5%;
                             font-size: 1.15rem;
 
                             /* Margin and padding */
@@ -405,11 +413,16 @@
 
                         p {
                             /* Size */
-                            max-width: 97.5%;
+                            max-width: 70vw;
                             font-size: 1rem;
 
                             /* Font */
                             font-family: "Roboto-light", sans-serif;
+
+                            /* Overflow */
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
 
                             @include breakpointMax(350px) {
                                 /* Size */
