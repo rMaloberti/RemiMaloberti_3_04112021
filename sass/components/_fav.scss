@@ -22,7 +22,7 @@
     &:hover {
         > svg:first-child {
             /* Transform */
-            transform: scale(1);
+            transform: scale(1.1);
         }
 
         > svg:last-child {
@@ -50,7 +50,7 @@
         transform: scale(0);
 
         /* Transition */
-        transition: transform 500ms;
+        transition: transform 500ms ease-in-out;
 
         path {
             fill: url(#linear);
@@ -62,7 +62,7 @@
         opacity: 1;
 
         /* Transition */
-        transition: opacity 500ms;
+        transition: opacity 500ms ease-in-out;
     }
 
     svg {
