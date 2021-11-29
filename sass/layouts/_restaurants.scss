@@ -1,5 +1,5 @@
 /* Restaurants */
-#restaurants {
+.restaurants {
     /* Display */
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@
         gap: 2.5rem;
     }
 
-    h2 {
+    &__heading {
         /* Size */
         font-size: 1.4rem;
 
