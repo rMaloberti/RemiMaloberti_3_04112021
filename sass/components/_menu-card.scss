@@ -38,12 +38,12 @@
     }
 
     &:hover {
-        > .infos {
+        > .menu-card__infos {
             /* Size */
             min-width: 75%;
         }
 
-        > .added {
+        > .menu-card__added {
             /* Transform */
             transform: scaleX(1);
 
@@ -54,7 +54,7 @@
         }
     }
 
-    .infos {
+    &__infos {
         /* Size */
         min-width: 100%;
 
@@ -77,93 +77,93 @@
             /* Margin and padding */
             padding: 0.125rem 0.25rem;
         }
-    }
 
-    .text {
-        /* Size */
-        width: 75%;
+        .text {
+            /* Size */
+            width: 75%;
 
-        /* Display */
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-
-        @include breakpointMax(250px) {
             /* Display */
-            gap: 0.125rem;
-        }
-
-        > h3,
-        > p {
-            /* Size */
-            width: auto;
-
-            /* Overflow */
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        > h3 {
-            /* Size */
-            font-size: 1.1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
 
             @include breakpointMax(250px) {
-                /* Size */
-                font-size: 0.55rem;
+                /* Display */
+                gap: 0.125rem;
             }
 
-            @include breakpointMax(150px) {
+            > h3,
+            > p {
                 /* Size */
-                font-size: 0.275rem;
+                width: auto;
+
+                /* Overflow */
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            > h3 {
+                /* Size */
+                font-size: 1.1rem;
+
+                @include breakpointMax(250px) {
+                    /* Size */
+                    font-size: 0.55rem;
+                }
+
+                @include breakpointMax(150px) {
+                    /* Size */
+                    font-size: 0.275rem;
+                }
+            }
+
+            > p {
+                /* Font */
+                font-family: "Roboto-light", sans-serif;
+
+                @include breakpointMax(250px) {
+                    /* Size */
+                    font-size: 0.5rem;
+                }
+
+                @include breakpointMax(150px) {
+                    /* Size */
+                    font-size: 0.25rem;
+                }
             }
         }
 
-        > p {
+        .price {
+            /* Display */
+            display: flex;
+            align-items: flex-end;
+
+            /* Margin and padding */
+            padding-right: 0.5rem;
+
             /* Font */
-            font-family: "Roboto-light", sans-serif;
+            font-weight: bold;
 
             @include breakpointMax(250px) {
                 /* Size */
                 font-size: 0.5rem;
+
+                /* Margin and padding */
+                padding-right: 0.25rem;
             }
 
             @include breakpointMax(150px) {
                 /* Size */
                 font-size: 0.25rem;
+
+                /* Margin and padding */
+                padding-right: 0.125rem;
             }
         }
     }
 
-    .price {
-        /* Display */
-        display: flex;
-        align-items: flex-end;
-
-        /* Margin and padding */
-        padding-right: 0.5rem;
-
-        /* Font */
-        font-weight: bold;
-
-        @include breakpointMax(250px) {
-            /* Size */
-            font-size: 0.5rem;
-
-            /* Margin and padding */
-            padding-right: 0.25rem;
-        }
-
-        @include breakpointMax(150px) {
-            /* Size */
-            font-size: 0.25rem;
-
-            /* Margin and padding */
-            padding-right: 0.125rem;
-        }
-    }
-
-    .added {
+    &__added {
         /* Size */
         width: 25%;
 
