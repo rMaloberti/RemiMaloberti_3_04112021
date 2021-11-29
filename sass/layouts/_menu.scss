@@ -1,6 +1,6 @@
 /* Menu */
 .menu {
-    .thumbnail {
+    &__thumbnail {
         /* Size */
         min-height: 20rem;
 
@@ -80,7 +80,7 @@
             bottom: 1.25rem;
         }
 
-        .headings {
+        &__headings {
             /* Size */
             width: 100%;
             max-width: 40rem;
@@ -145,7 +145,7 @@
                     margin-right: 0;
                 }
 
-                svg {
+                &__icon {
                     /* Size */
                     font-size: 1.7rem;
 
@@ -208,7 +208,7 @@
                 align-items: center;
             }
 
-            h2 {
+            &__heading {
                 /* Size */
                 font-size: 1rem;
 
@@ -231,7 +231,7 @@
                 }
             }
 
-            hr {
+            &__line {
                 /* Size */
                 width: 2.5rem;
                 height: 0.2rem;
@@ -273,7 +273,7 @@
                 }
             }
 
-            ul {
+            &__list {
                 /* Size */
                 width: 100%;
 
@@ -326,7 +326,7 @@
             }
         }
 
-        .btn {
+        &__btn {
             /* Size */
             width: 15rem;
 

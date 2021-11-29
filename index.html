@@ -137,13 +137,15 @@
                 </svg>
             </header>
             <main>
-                <div id="location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>Paris, Belleville</p>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt location__icon"></i>
+                    <p class="location__text">Paris, Belleville</p>
                 </div>
-                <section id="intro">
-                    <h2>Réservez le menu qui vous convient</h2>
-                    <p>
+                <section class="intro">
+                    <h2 class="intro__heading">
+                        Réservez le menu qui vous convient
+                    </h2>
+                    <p class="intro__paragraph">
                         Découvrez des restaurants d'exception, séléctionnés par
                         nos soins.
                     </p>
@@ -151,100 +153,100 @@
                         Explorer nos restaurants
                     </a>
                 </section>
-                <section id="quick-start">
-                    <h2>Fonctionnement</h2>
+                <section class="quick-start">
+                    <h2 class="quick-start__heading">Fonctionnement</h2>
                     <div class="card">
                         <div class="card__nb">1</div>
-                        <i class="fas fa-mobile-alt"></i>
-                        <p>Choisissez un restaurant</p>
+                        <i class="fas fa-mobile-alt card__icon"></i>
+                        <p class="card__paragraph">Choisissez un restaurant</p>
                     </div>
                     <div class="card">
                         <div class="card__nb">2</div>
-                        <i class="fas fa-list-ul"></i>
-                        <p>Composez votre menu</p>
+                        <i class="fas fa-list-ul card__icon"></i>
+                        <p class="card__paragraph">Composez votre menu</p>
                     </div>
                     <div class="card card--highlight">
                         <div class="card__nb">3</div>
-                        <i class="fas fa-store"></i>
-                        <p>Dégustez au restaurant</p>
+                        <i class="fas fa-store card__icon"></i>
+                        <p class="card__paragraph">Dégustez au restaurant</p>
                     </div>
                 </section>
-                <section id="restaurants">
-                    <h2>Restaurants</h2>
+                <section id="restaurants" class="restaurants">
+                    <h2 class="restaurants__heading">Restaurants</h2>
                     <a href="menu/la-palette-du-gout.html">
                         <div class="card">
-                            <div class="new-label">Nouveau</div>
-                            <div class="thumbnail">
+                            <div class="card__new-label">Nouveau</div>
+                            <div class="card__thumbnail">
                                 <img
                                     alt="La palette du goût"
                                     src="public/assets/images/la-palette-du-gout.jpg"
                                 />
                             </div>
-                            <div class="infos">
+                            <div class="card__infos">
                                 <div class="text">
                                     <h3>La palette du goût</h3>
                                     <p>Ménilmontant</p>
                                 </div>
                                 <div class="fav">
-                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-heart fav__icon"></i>
                                 </div>
                             </div>
                         </div>
                     </a>
                     <a href="menu/la-note-enchantee.html">
                         <div class="card">
-                            <div class="new-label">Nouveau</div>
-                            <div class="thumbnail">
+                            <div class="card__new-label">Nouveau</div>
+                            <div class="card__thumbnail">
                                 <img
                                     alt="La note enchantée"
                                     src="public/assets/images/la-note-enchantee.jpg"
                                 />
                             </div>
-                            <div class="infos">
+                            <div class="card__infos">
                                 <div class="text">
                                     <h3>La note enchantée</h3>
                                     <p>Charonne</p>
                                 </div>
                                 <div class="fav">
-                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-heart fav__icon"></i>
                                 </div>
                             </div>
                         </div>
                     </a>
                     <a href="menu/a-la-francaise.html">
                         <div class="card">
-                            <div class="thumbnail">
+                            <div class="card__thumbnail">
                                 <img
                                     alt="À la française"
                                     src="public/assets/images/a-la-francaise.jpg"
                                 />
                             </div>
-                            <div class="infos">
+                            <div class="card__infos">
                                 <div class="text">
                                     <h3>À la française</h3>
                                     <p>Cité Rouge</p>
                                 </div>
                                 <div class="fav">
-                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-heart fav__icon"></i>
                                 </div>
                             </div>
                         </div>
                     </a>
                     <a href="menu/le-delice-des-sens.html">
                         <div class="card">
-                            <div class="thumbnail">
+                            <div class="card__thumbnail">
                                 <img
                                     alt="Le délice des sens"
                                     src="public/assets/images/le-delice-des-sens.jpg"
                                 />
                             </div>
-                            <div class="infos">
+                            <div class="card__infos">
                                 <div class="text">
                                     <h3>Le délice des sens</h3>
                                     <p>Folie-Méricourt</p>
                                 </div>
                                 <div class="fav">
-                                    <i class="far fa-heart"></i>
+                                    <i class="far fa-heart fav__icon"></i>
                                 </div>
                             </div>
                         </div>
@@ -293,24 +295,26 @@
                         fill="#101010"
                     />
                 </svg>
-                <ul>
-                    <li>
-                        <a href="">
-                            <i class="fas fa-utensils"></i>
+                <ul class="list">
+                    <li class="item">
+                        <a class="link" href="">
+                            <i class="fas fa-utensils link__icon"></i>
                             Proposer un restaurant
                         </a>
                     </li>
-                    <li>
-                        <a href="">
-                            <i class="fas fa-hands-helping"></i>
+                    <li class="item">
+                        <a class="link" href="">
+                            <i class="fas fa-hands-helping link__icon"></i>
                             Devenir partenaire
                         </a>
                     </li>
-                    <li>
-                        <a href="">Mentions légales</a>
+                    <li class="item">
+                        <a class="link" href="">Mentions légales</a>
                     </li>
-                    <li>
-                        <a href="mailto:ohmyfood@gmail.com">Contact</a>
+                    <li class="item">
+                        <a class="link" href="mailto:ohmyfood@gmail.com"
+                            >Contact</a
+                        >
                     </li>
                 </ul>
             </footer>

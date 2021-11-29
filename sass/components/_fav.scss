@@ -65,9 +65,12 @@
         transition: opacity 500ms ease-in-out;
     }
 
-    svg {
+    &__icon {
         /* Size */
         font-size: 1.4rem;
+
+        /* Color */
+        color: #6e6e6e;
 
         @include breakpointMax(350px) {
             /* Size */

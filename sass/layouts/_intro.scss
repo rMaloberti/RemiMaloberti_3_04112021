@@ -1,4 +1,4 @@
-#intro {
+.intro {
     /* Display */
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@
         padding: 1.25rem;
     }
 
-    > h2 {
+    &__heading {
         /* Size */
         font-size: 1.4rem;
         max-width: 15rem;
@@ -38,7 +38,7 @@
         }
     }
 
-    > p {
+    &__paragraph {
         /* Size */
         font-size: 1rem;
         max-width: 20rem;

@@ -1,5 +1,5 @@
 /* Location section */
-#location {
+.location {
     /* Display */
     display: flex;
     justify-content: center;
@@ -24,8 +24,8 @@
         padding: 0.5rem 0;
     }
 
-    > p,
-    > svg {
+    &__icon,
+    &__text {
         /* Size */
         font-size: 0.85rem;
 

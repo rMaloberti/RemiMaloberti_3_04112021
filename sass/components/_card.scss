@@ -22,12 +22,12 @@
         border-radius: 0.375rem;
     }
 
-    svg {
+    &__icon {
         /* Color */
         color: #6e6e6e;
     }
 
-    .new-label {
+    &__new-label {
         /* Size */
         font-size: 0.8rem;
 
@@ -82,7 +82,7 @@
         }
     }
 
-    .thumbnail {
+    &__thumbnail {
         /* Display */
         overflow: hidden;
 
@@ -109,7 +109,7 @@
         }
     }
 
-    .infos {
+    &__infos {
         /* Size */
         width: 100%;
 
